@@ -1,0 +1,40 @@
+.moviesmainrow {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50%;
+  
+  margin-left: 50px;
+margin-top: 100px;
+  box-shadow: 0 0 5px 1px grey;
+  .moviesmaincol {
+    padding: 10px;
+
+    // box-shadow: 0 0 5px 1px grey;
+    .moviesrow {
+      display: grid;
+      grid-template-columns: 15% 30% 1fr;
+      justify-content: center;
+
+      .moviescol {
+        .poster {
+          width: 90%;
+          height: 90%;
+          box-shadow: 0 0 5px 1px grey;
+          border-radius: 5px;
+        }
+      }
+      .align {
+        display: grid;
+        place-items: center;
+      }
+    }
+
+    .trailer {
+      background-color: rgb(42, 119, 206);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+  }
+}
